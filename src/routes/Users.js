@@ -10,7 +10,7 @@ oRouter.post('/login', (oRequest, oResponse) => {
   Controller.login(oRequest, oResponse);
 });
 
-oRouter.post('/edit-user/:userId', (oRequest, oResponse) => {
+oRouter.post('/edit/:userId', (oRequest, oResponse) => {
   Controller.editUser(oRequest, oResponse);
 });
 

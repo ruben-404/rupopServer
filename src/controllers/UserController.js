@@ -123,7 +123,8 @@ var UserController = class UserController extends Controller {
         lastname,
         email,
         password: hashedPassword,
-        remember_token: null
+        remember_token: null,
+        isAdmin: false
       };
     
       await Model.create(newUser);

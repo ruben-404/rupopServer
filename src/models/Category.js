@@ -8,6 +8,7 @@ class Category extends Model {
 
     async getByTitle(title) {
         try {
+            console.log('hola');
             const db = await this.connect();
             const collection = db.collection(this.collectionName);
             return await collection.findOne({ title });
